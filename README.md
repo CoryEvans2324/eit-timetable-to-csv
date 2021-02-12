@@ -4,6 +4,8 @@ Converts timetables generated from http://mytimetable1.eit.ac.nz/ to CSV files c
 
 
 ### Setup
+Use python version >= 3.6
+
 Setup a virtual environment
 ```bash
 $ python3 -m venv venv
@@ -52,5 +54,5 @@ python scrape.py
 ```
 This saves a `calendar.csv` file in the current working directory.
 
-### [How to import into Google Calendar](https://support.google.com/calendar/answer/37118?co=GENIE.Platform%3DDesktop&hl=en)
+### [How to import into Google Calendar](https://support.google.com/calendar/answer/37118)
 
