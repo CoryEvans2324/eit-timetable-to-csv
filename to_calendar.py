@@ -9,13 +9,13 @@ def event_to_csv(date_str, event: dict) -> str:
     start_time = date + datetime.timedelta(hours=event['start'])
     end_time = date + datetime.timedelta(hours=event['end'])
     data = {
-        'Subject': event['classcode'],
+        'Subject': event['classname'],
         'Start Date': date_str,
         'Start Time': start_time.strftime('%I:%M %p'),
         'End Date': date_str,
         'End Time': end_time.strftime('%I:%M %p'),
         'All Day Event': 'False',
-        'Description': event['classname'],
+        'Description': event['classcode'],
         'Location': event['classroom'],
         'Private': 'False'
     }

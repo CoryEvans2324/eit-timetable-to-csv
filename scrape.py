@@ -103,6 +103,11 @@ class Course:
             assert len(children_tags) == 3
 
             classname = children_tags[0].tr.td.text
+
+            # remove ' -' from the end of the class name
+            if classname.endswith(' -'):
+                classname = classname[:-2]
+
             lecturer, classroom = [
                 tag.text
                 for tag in children_tags[1].tr.find_all('td')
